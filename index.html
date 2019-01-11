@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Page Title</title>
+    <title>Geo Trivia</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="assets/css/style.css" />
     
@@ -18,10 +18,8 @@
             <p> You have 30 seconds to complete these questions. Good Luck!</p>
             <h2>Time Left:<span class="timer"></span></h2>
            
-            <!--Timer-->
-            
-
-            
+            <!--Timer-->       
+           
             <form id="quiz">
             
                <p class="question">Which one these is NOT a great lake? </p> 
@@ -38,7 +36,7 @@
 
                <p class="question">What is the longest river in the continetal US?</p>
                <input type="radio" name="river" value="1"> Missouri 
-               <input type="radio" name="state" value="2"> Ponchartrain
+               <input type="radio" name="river" value="2"> Ponchartrain
                <input type="radio" name="river" value="3">  Mississippi
                 <input type="radio" name="river" value="4"> Nile
 
@@ -65,9 +63,9 @@
                 <input type="radio" name="corn" value="2"> Colorado
                 <input type="radio" name="corn" value="3"> Wisconsin
                 <input type="radio" name="corn" value="4"> Iowa                
-
-
-            </form>     
+                <br>
+                <button onclick="checkAns()" type="button">Submit Answers</button>
+                        </form>     
         </div>
 
     </div>

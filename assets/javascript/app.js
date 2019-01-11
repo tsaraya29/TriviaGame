@@ -46,8 +46,20 @@
       $("#quiz").hide();
     }
     //Check answer
-    var correctAnswers
-    function checkAnswer(){
+    var correctAns = [3,2,1,4,1,4,4];
+    var quizAns = [];
+    
+    function checkAns(){
+      var l = $("input[name=lake]:checked").val();
+      var s = $("input[name=state]:checked").val();
+      var r = $("input[name=river]:checked").val();
+      var o = $("input[name=oceans]:checked").val();
+      var t = $("input[name=trees]:checked").val();
+      var n = $("input[name=rain]:checked").val();
+      var c = $("input[name=corn]:checked").val();
+
+      quizAns.push(l,s,r,o,t,n,c);    
+      console.log(quizAns); 
 
     }
     //  Execute the run function.
