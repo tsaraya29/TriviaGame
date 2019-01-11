@@ -46,7 +46,7 @@
       $("#quiz").hide();
     }
     //Check answer
-    var correctAns = [3,2,1,4,1,4,4];
+    var correctAns = ["3","2","1","4","1","4","4"];
     var quizAns = [];
     
     function checkAns(){
@@ -59,9 +59,14 @@
       var c = $("input[name=corn]:checked").val();
 
       quizAns.push(l,s,r,o,t,n,c);    
-      console.log(quizAns); 
-
+      
+      if (JSON.stringify(correctAns) === JSON.stringify(quizAns)) {
+    console.log('They are equal!');
     }
+      else {
+        console.log("sorry, try again");
+      }
+  }
     //  Execute the run function.
     timesUp();
 
